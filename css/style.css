@@ -1,0 +1,98 @@
+body {
+    height: 100vh;
+    margin: 0;
+
+    background-image: url('../assets/images/fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('../assets/fonts/HeavyCopper3D-K7Z77.otf');
+  }
+  
+  * {
+    font-family: 'RobotoMono', monospace;
+  }
+
+.corpo {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.esquerda {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.direitos {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.direitos span {
+    font-family: roboto;
+}
+
+
+.lista {
+    width: 100%;
+}
+
+ul {
+    padding-right: 40px;
+}
+
+ul li {
+    color: red;
+    padding: 20px 0px;
+    margin: 15px 0px;
+    font-size: 24px;
+    list-style: none;
+    box-shadow: 0px 0px  5px goldenrod;
+
+}
+
+.lista ul li a {
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+.lista ul li ul  {
+    display: none;
+}
+
+.lista li:hover ul{
+    display: block;
+}
+
+.lista li:hover {
+    box-shadow: none;
+}
